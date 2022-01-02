@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { InputComponent } from "../../components/InputComponent/InputComponent";
 import {
   AnimationComponent,
   MainPageContainer,
@@ -22,6 +23,7 @@ export const MainPage = () => {
       >
         MyButton
       </Button>
+      <InputComponent />
     </MainPageContainer>
   );
 };
