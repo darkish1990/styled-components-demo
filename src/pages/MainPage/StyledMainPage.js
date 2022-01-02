@@ -10,18 +10,20 @@ export const MainPageContainer = styled.div`
   ${someCss}//this will put the background-color: red; here
 `;
 
-export const Button = styled.button.attrs({
-  onmouseover: () => {
-    console.log("onmouseovered");
-  },
-})`
+export const Button = styled.button.attrs((props) => ({
+  /* Here we can set the traditional HTML tag`s properties */
+  type: "submit",
+  disabled: props.loading,
+}))`
   height: 30px;
   width: 200px;
 
   background-color: ${({ primary }) => (primary ? "green" : "blue")};
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  background-color: blue;
+`;
 export const SubTitle = styled.h2``;
 
 const animation = keyframes`
