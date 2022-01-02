@@ -15,13 +15,14 @@ export const Button = styled.button.attrs({
     console.log("onmouseovered");
   },
 })`
-  background-color: ${({ primary }) => (primary ? "red" : "blue")};
+  height: 30px;
+  width: 200px;
+
+  background-color: ${({ primary }) => (primary ? "green" : "blue")};
 `;
 
-export const Title = styled.h1`
-`;
-export const SubTitle = styled.h2`
-`;
+export const Title = styled.h1``;
+export const SubTitle = styled.h2``;
 
 const animation = keyframes`
   0% {

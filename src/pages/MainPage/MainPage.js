@@ -19,7 +19,9 @@ export const MainPage = () => {
         onClick={() => {
           setIsPrimary((prev) => !prev);
         }}
-      />
+      >
+        MyButton
+      </Button>
     </MainPageContainer>
   );
 };
